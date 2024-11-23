@@ -1,7 +1,8 @@
 import axios from 'axios'
 import { jwtDecode } from 'jwt-decode';
 const api = axios.create({
-    baseURL:'http://localhost:7777',
+    // baseURL:'http://localhost:7777',
+    baseURL:'https://masjidbackend.onrender.com',
     withCredentials:true
 })
 
