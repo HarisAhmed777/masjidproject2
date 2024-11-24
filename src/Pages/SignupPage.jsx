@@ -3,6 +3,7 @@ import Labelandinput from '../components/Labelandinput';
 import { Button } from '../components/ui/button';
 import { signupnewuser } from '../components/API/Api';
 import { Link, useNavigate } from 'react-router-dom';
+import Logo from '../assets/images/Logo.svg';
 function SignupPage() {
     const navigate = useNavigate();
     const [values,setValues] = useState({
@@ -140,6 +141,10 @@ function SignupPage() {
     return (
         <div className='bg-loginbg w-full flex justify-center p-4 md:p-10'>
             <div className='bg-[#f9f9f9] w-full md:w-[80vw] lg:w-[80vw] p-8 md:p-20 lg:p-32'>
+            <div className='text-center flex justify-center'>
+          <img src={Logo} alt="Logo" className='h-24 '  />
+
+        </div>
                 <h2 className='text-2xl sm:text-3xl text-blue-700 text-center font-semibold mb-4'>Masjid Signup</h2>
                 <p className='mb-6'>
                     Already have an account?<Link to = '/login'> <span className='text-blue-500'>Login</span></Link>

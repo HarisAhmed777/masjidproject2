@@ -33,9 +33,9 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Masjidal",
       logo: GalleryVerticalEnd,
-      plan: "Enterprise",
+      plan: "Masjid Project",
     },
     {
       name: "Acme Corp.",
@@ -86,7 +86,7 @@ const data = {
       ],
     },
     {
-      title: "Setthings",
+      title: "Settings",
       url: "#",
       icon: BookOpen,
       items: [
@@ -161,7 +161,7 @@ export function AppSidebar(props) {
          
         </SidebarContent>
         <SidebarFooter>
-          <NavUser user={data.user} />
+          <NavUser  user={data.user} />
         </SidebarFooter>
         <SidebarRail />
       </Sidebar>

@@ -295,3 +295,13 @@ const getMonthName = (month) => {
       console.log(error);
     }
   }
+
+export const logoutapi =  async (req,res)=>{
+  try{
+    const res = api.post('/v1/user/logout');
+    return res.status===200? true:"";
+  }
+  catch(error){
+    console.log(error.message);
+  }
+}

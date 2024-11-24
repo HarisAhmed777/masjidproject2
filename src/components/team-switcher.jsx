@@ -39,12 +39,12 @@ export function TeamSwitcher({
                 <span className="truncate font-semibold">
                   {activeTeam.name}
                 </span>
-                <span className="truncate text-xs">{activeTeam.plan}</span>
+                {/* <span className="truncate text-xs">{activeTeam.plan}</span> */}
               </div>
-              <ChevronsUpDown className="ml-auto" />
+              {/* <ChevronsUpDown className="ml-auto" /> */}
             </SidebarMenuButton>
           </DropdownMenuTrigger>
-          <DropdownMenuContent
+          {/* <DropdownMenuContent
             className="w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg"
             align="start"
             side={isMobile ? "bottom" : "right"}
@@ -69,7 +69,7 @@ export function TeamSwitcher({
               </div>
               <div className="font-medium text-muted-foreground">Add team</div>
             </DropdownMenuItem>
-          </DropdownMenuContent>
+          </DropdownMenuContent> */}
         </DropdownMenu>
       </SidebarMenuItem>
     </SidebarMenu>)

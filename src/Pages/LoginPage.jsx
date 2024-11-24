@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Labelandinput from '../components/Labelandinput'
 import {Button} from '../components/ui/button';
 import { checkemail, loginuser } from '../components/API/Api';
+import Logo from '../assets/images/Logo.svg';
 // import { loginlogo } from '../../src/assets/loginlogo.png';
 // secondfrontend/src/assets/loginlogo.png
 import { Link, useNavigate } from 'react-router-dom'
@@ -85,7 +86,10 @@ function LoginPage() {
     <div className='bg-loginbg w-[100vw] relative overflow-hidden'>
       <div className='w-[100vw] h-[100vh] flex flex-col items-center justify-center'>
       <div className='bg-[#f9f9f9]  w-3/4 md:w-1/2 lg:w-[40%] xl:w-[27%]  p-4 rounded-lg shadow-lg text-'>
-      <img src="" alt="Logo" />
+        <div className='text-center flex justify-center'>
+          <img src={Logo} alt="Logo" className='h-24 '  />
+
+        </div>
       <h2 className='text-2xl sm:text-3xl text-blue-700 text-center font-semibold mb-4'>Masjid Login</h2>
       <p>Don't You have an account?<Link to = '/signup'> <span className='text-blue-500 hover:text-blue-900'>Sign Up</span></Link></p>
       <Labelandinput {...labelandinput[0]} errorstate:errorstate/>

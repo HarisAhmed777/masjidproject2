@@ -44,7 +44,7 @@ function Iqama() {
         <h2 className="text-xl sm:text-2xl text-blue-900">IQAMA TIMINGS</h2>
         <div className="flex gap-4 me-10">
           <Button onClick={() => setOpen(true)}>Add</Button>
-          <AddIqama open={open} setOpen={setOpen} />
+          <AddIqama open={open} setOpen={setOpen} />  
           <Button>Upload</Button>
         </div>
       </div>
